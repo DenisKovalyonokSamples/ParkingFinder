@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_dark_blue"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:paddingRight="0dp"
+    android:paddingLeft="0dp">
+    <android.support.v7.widget.Toolbar xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:paddingRight="@dimen/padding_right"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:id="@+id/toolbar">
+        <ImageView
+            android:src="@mipmap/car_number_board"
+            android:layout_width="89dp"
+            android:layout_height="20dp"
+            android:id="@+id/imageCarNumberBoard"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right" />
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:layout_marginBottom="120dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ScrollView
+            android:id="@+id/scrollMainContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+                    <TextView
+                        android:text="Cost of device with installation"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textAutoParkingTitle"
+                        android:textSize="@dimen/h3_text_size"
+                        android:textColor="@color/submit_button_color"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentBottom="true" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+                    <TextView
+                        android:text="9.99$"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textAutoParkingCost"
+                        android:layout_centerVertical="true"
+                        android:textSize="@dimen/h2_text_size"
+                        android:textColor="@color/bgr_white"
+                        android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+                <TextView
+                    android:text="Order a telematics device and get all the features of automatic parking. There will no longer be a need to regularly log into the application to start and end the parking session. Engage in really important matters, and provide us with the opportunity to park your car. The cost of the device and its installation is only 3,500 rubles. All other payments will be made exclusively at the expense of parking sessions. We do not charge for our car parking services."
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textAutoParkingDescription"
+                    android:textColor="@color/description_message_color"
+                    android:textSize="@dimen/h3_text_size"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="20dp" />
+                <Button
+                    android:id="@+id/buttonOrderInstallation"
+                    android:gravity="center"
+                    android:background="@drawable/button_round_orange"
+                    android:typeface="sans"
+                    android:textColor="@color/bgr_white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:textAllCaps="true"
+                    android:layout_gravity="center"
+                    android:text="ORDER INSTALLATION"
+                    android:layout_alignParentRight="true"
+                    android:paddingRight="20dp"
+                    android:paddingLeft="20dp"
+                    android:layout_marginBottom="20dp" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <Button
+        android:id="@+id/buttonGetFree"
+        android:gravity="center"
+        android:background="@drawable/button_round_green"
+        android:typeface="sans"
+        android:textColor="@color/bgr_white"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textAllCaps="true"
+        android:layout_gravity="center"
+        android:text="GET FREE"
+        android:layout_alignParentBottom="true"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:layout_marginBottom="70dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp" />
+    <FrameLayout
+        android:id="@+id/fragmentMenu"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_bottom" />
+</RelativeLayout>

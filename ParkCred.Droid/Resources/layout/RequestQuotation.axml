@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_dark_blue"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:paddingRight="0dp"
+    android:paddingLeft="0dp">
+    <android.support.v7.widget.Toolbar xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:paddingRight="@dimen/padding_right"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:id="@+id/toolbar">
+        <ImageView
+            android:src="@mipmap/car_number_board"
+            android:layout_width="89dp"
+            android:layout_height="20dp"
+            android:id="@+id/imageCarNumberBoard"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right" />
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:layout_marginBottom="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ScrollView
+            android:id="@+id/scrollMainContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:src="@mipmap/ic_launcher"
+                        android:layout_width="206dp"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="20dp">
+                    <TextView
+                        android:text="Buying a CASCO policy you get the device for free"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textBuyPolice"
+                        android:textSize="@dimen/h3_text_size"
+                        android:textColor="@color/bgr_white"
+                        android:layout_alignParentBottom="true"
+                        android:gravity="center"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginLeft="20dp" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+                    <TextView
+                        android:text="Advantages of CASCO"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textBenefits"
+                        android:layout_centerVertical="true"
+                        android:textSize="@dimen/h2_text_size"
+                        android:textColor="@color/bgr_white"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp" />
+                </RelativeLayout>
+                <TextView
+                    android:text="- Quarterly policy"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textQuarterlyPolicy"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/h3_text_size"
+                    android:textColor="@color/bgr_white"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp" />
+                <TextView
+                    android:text="- Guaranteed discounts on prolongation"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textDiscounts"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/h3_text_size"
+                    android:textColor="@color/bgr_white"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp" />
+                <TextView
+                    android:text="- Bonus system"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textBonuses"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/h3_text_size"
+                    android:textColor="@color/bgr_white"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp" />
+                <TextView
+                    android:text="- Simplified settlement (without a visit to the office)"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textSettlement"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/h3_text_size"
+                    android:textColor="@color/bgr_white"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp" />
+                <TextView
+                    android:text="- Road assistance"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textHelp"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/h3_text_size"
+                    android:textColor="@color/bgr_white"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginRight="20dp" />
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/editSurname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:text="Smith"
+                        android:hint="Surname"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/h2_text_size"
+                        android:textColor="@color/bgr_white" />
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/editName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:text="John"
+                        android:hint="Name"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/h2_text_size"
+                        android:textColor="@color/bgr_white" />
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/editMark"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:text="Kia"
+                        android:hint="Brand"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/h2_text_size"
+                        android:textColor="@color/bgr_white" />
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/editModel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:text="Ceed"
+                        android:hint="Brand"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/h2_text_size"
+                        android:textColor="@color/bgr_white" />
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/editYear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:text="2015"
+                        android:hint="Year"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/h2_text_size"
+                        android:textColor="@color/bgr_white" />
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/editRegistrationNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:text="X520CC197"
+                        android:hint="Registration number"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/h2_text_size"
+                        android:textColor="@color/bgr_white" />
+                </android.support.design.widget.TextInputLayout>
+                <Button
+                    android:id="@+id/buttonSendRequest"
+                    android:gravity="center"
+                    android:background="@drawable/button_round_green"
+                    android:typeface="sans"
+                    android:textColor="@color/bgr_white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:textAllCaps="true"
+                    android:layout_gravity="center"
+                    android:text="SEND REQUEST"
+                    android:layout_alignParentRight="true"
+                    android:paddingRight="20dp"
+                    android:paddingLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/fragmentMenu"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_bottom" />
+</RelativeLayout>

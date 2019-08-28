@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>fa2fb86d-c461-4976-a4a8-57cc3ffddcbb</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>ParkCred.Shared</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)DataAccess\APIDataManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DataAccess\SQLDataManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\API\AddressModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\SQL\Parking.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\SQL\User.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Enums\AutoParkingStatus.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Enums\ParkingSessionStatus.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Enums\PartialType.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Managers\SessionManager.cs" />
+  </ItemGroup>
+</Project>

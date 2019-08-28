@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="ryxol.parkcred" android:versionCode="1" android:versionName="1.0" android:installLocation="auto">
+  <uses-sdk android:minSdkVersion="16" android:targetSdkVersion="28" />
+  <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+  <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+  <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+  <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+  <uses-permission android:name="android.permission.VIBRATE" />
+  <uses-permission android:name="android.permission.WAKE_LOCK" />
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+  <application android:label="ParkCred" android:name="android.app.Application" android:allowBackup="true" android:icon="@mipmap/icon" android:debuggable="true">
+    <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="YOUR API KEY" />
+    <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+    <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:icon="@mipmap/icon" android:label="ParkCred" android:launchMode="singleInstance" android:screenOrientation="portrait" android:theme="@style/StartupTheme" android:name="md50215a9420da39339c46357e0f5396401.MainActivity">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+    <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:label="ParkCred" android:launchMode="singleTask" android:screenOrientation="portrait" android:theme="@style/MasterLayoutTheme" android:name="md5fbe61341ee493a38f48a96d6189c4cb5.AppInfoActivity" />
+    <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:label="ParkCred" android:launchMode="singleTask" android:screenOrientation="portrait" android:theme="@style/MasterLayoutTheme" android:name="md5fbe61341ee493a38f48a96d6189c4cb5.AutoParkingActivity" />
+    <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:label="ParkCred" android:launchMode="singleTask" android:screenOrientation="portrait" android:theme="@style/MasterLayoutTheme" android:name="md5fbe61341ee493a38f48a96d6189c4cb5.PlanSessionActivity" />
+    <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:label="ParkCred" android:launchMode="singleTask" android:screenOrientation="portrait" android:theme="@style/MasterLayoutTheme" android:name="md5fbe61341ee493a38f48a96d6189c4cb5.RequestQuotationActivity" />
+    <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="ryxol.parkcred.mono.MonoRuntimeProvider.__mono_init__" />
+    <!--suppress ExportedReceiver-->
+    <receiver android:name="mono.android.Seppuku">
+      <intent-filter>
+        <action android:name="mono.android.intent.action.SEPPUKU" />
+        <category android:name="mono.android.intent.category.SEPPUKU.ryxol.parkcred" />
+      </intent-filter>
+    </receiver>
+    <activity android:name="net.hockeyapp.android.UpdateActivity" />
+    <activity android:name="net.hockeyapp.android.FeedbackActivity" android:windowSoftInputMode="adjustResize|stateVisible" />
+    <activity android:name="net.hockeyapp.android.PaintActivity" />
+    <activity android:name="net.hockeyapp.android.LoginActivity" />
+    <activity android:name="net.hockeyapp.android.ExpiryInfoActivity" />
+    <activity android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:exported="false" />
+  </application>
+  <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+  <meta-data android:name="android.support.VERSION" android:value="25.3.1" />
+  <uses-feature android:glEsVersion="0x00020000" android:required="true" />
+</manifest>

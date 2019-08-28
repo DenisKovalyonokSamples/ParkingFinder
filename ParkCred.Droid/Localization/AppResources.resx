@@ -1,0 +1,318 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AutomaticParking" xml:space="preserve">
+    <value>Automatic parking</value>
+  </data>
+  <data name="AutoParkingFunctionDescription" xml:space="preserve">
+    <value>Automatic parking will allow you not to worry about that you forgot to park. When in the parking zone, the system will automatically park your car. To activate automatic parking, the installation of a telematics device is required.</value>
+  </data>
+  <data name="Balance" xml:space="preserve">
+    <value>Balance</value>
+  </data>
+  <data name="CancelSession" xml:space="preserve">
+    <value>Cancel session</value>
+  </data>
+  <data name="ChangeZone" xml:space="preserve">
+    <value>ChangeZone</value>
+  </data>
+  <data name="CurrentSession" xml:space="preserve">
+    <value>Current session</value>
+  </data>
+  <data name="DTOfSessionStart" xml:space="preserve">
+    <value>Date and time of the session start</value>
+  </data>
+  <data name="EndSession" xml:space="preserve">
+    <value>End session</value>
+  </data>
+  <data name="History" xml:space="preserve">
+    <value>History</value>
+  </data>
+  <data name="Main" xml:space="preserve">
+    <value>Main</value>
+  </data>
+  <data name="More" xml:space="preserve">
+    <value>More</value>
+  </data>
+  <data name="NoScheduledParkingSession" xml:space="preserve">
+    <value>No scheduled parking session</value>
+  </data>
+  <data name="ParkingAreaNumber" xml:space="preserve">
+    <value>Parking area number</value>
+  </data>
+  <data name="ParkingPlaces" xml:space="preserve">
+    <value>Parking places</value>
+  </data>
+  <data name="ParkingStatus" xml:space="preserve">
+    <value>Parking status</value>
+  </data>
+  <data name="Payment" xml:space="preserve">
+    <value>Payment</value>
+  </data>
+  <data name="PlannedSession" xml:space="preserve">
+    <value>Planned session</value>
+  </data>
+  <data name="Replenish" xml:space="preserve">
+    <value>Replenish</value>
+  </data>
+  <data name="Rub" xml:space="preserve">
+    <value>Rub.</value>
+  </data>
+  <data name="Schedule" xml:space="preserve">
+    <value>Schedule</value>
+  </data>
+  <data name="Used" xml:space="preserve">
+    <value>Used</value>
+  </data>
+  <data name="WaitingForParkingSession" xml:space="preserve">
+    <value>Waiting for parking session</value>
+  </data>
+  <data name="AppName" xml:space="preserve">
+    <value>ParkCred</value>
+  </data>
+  <data name="CurrentLocation" xml:space="preserve">
+    <value>Current location</value>
+  </data>
+  <data name="ScheduleParkingSession" xml:space="preserve">
+    <value>Schedule a parking session</value>
+  </data>
+  <data name="Undefined" xml:space="preserve">
+    <value>Undefined</value>
+  </data>
+  <data name="FirstTimeFreeTitle" xml:space="preserve">
+    <value>Free first</value>
+  </data>
+  <data name="Min" xml:space="preserve">
+    <value>Min</value>
+  </data>
+  <data name="ParkingSessionTimeMinusError" xml:space="preserve">
+    <value>The start time of the parking session can not be earlier than the current time.</value>
+  </data>
+  <data name="ChangeZoneConfirmMessage" xml:space="preserve">
+    <value>Do you really want to change the zone?</value>
+  </data>
+  <data name="EnableGPS" xml:space="preserve">
+    <value>Please enable GPS!</value>
+  </data>
+  <data name="GooglePlayServicesNotInstalledMessage" xml:space="preserve">
+    <value>Please install Google Play Services for correct application</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="DTOfSessionEnd" xml:space="preserve">
+    <value>Date and time of the session end</value>
+  </data>
+  <data name="FinishAndSchedule" xml:space="preserve">
+    <value>Finish and schedule</value>
+  </data>
+  <data name="AutoParkingDescription" xml:space="preserve">
+    <value>Order a telematics device and get all the possibilities of automatic parking. It will no longer be necessary to regularly enter the application to start and end the parking session. Be engaged in really important affairs, and parking your car provide an opportunity to do business with us. The cost of the device and its installation is only 3,500 rubles. All the rest of the payment will be made solely in account of parking sessions. We do not charge for our automatic parking services.</value>
+  </data>
+  <data name="DeviceCost" xml:space="preserve">
+    <value>Cost of the device with installation</value>
+  </data>
+  <data name="GetFree" xml:space="preserve">
+    <value>Get free</value>
+  </data>
+  <data name="OrderInstallation" xml:space="preserve">
+    <value>Order installation</value>
+  </data>
+  <data name="ApplicationFeatures" xml:space="preserve">
+    <value>Application Features</value>
+  </data>
+  <data name="AutoParkingOrderAccepted" xml:space="preserve">
+    <value>The order to install the device is accepted. Wait for the call of a specialist.</value>
+  </data>
+  <data name="BenefitsTitle" xml:space="preserve">
+    <value>Advantages of CASCO</value>
+  </data>
+  <data name="BonusSystem" xml:space="preserve">
+    <value>Bonus system</value>
+  </data>
+  <data name="BuyPoliceTitle" xml:space="preserve">
+    <value>Buying the CASCO policy you get the device for free</value>
+  </data>
+  <data name="CarMark" xml:space="preserve">
+    <value>Car mark</value>
+  </data>
+  <data name="CarModel" xml:space="preserve">
+    <value>Car model</value>
+  </data>
+  <data name="CarRegistrationNumber" xml:space="preserve">
+    <value>Car registration number</value>
+  </data>
+  <data name="CarYear" xml:space="preserve">
+    <value>Year of issue</value>
+  </data>
+  <data name="DeclareInsuranceEvent" xml:space="preserve">
+    <value>To declare an insurance event and monitor the status of settlement of current insurance cases</value>
+  </data>
+  <data name="Discounts" xml:space="preserve">
+    <value>Guaranteed discounts for prolongation</value>
+  </data>
+  <data name="Download" xml:space="preserve">
+    <value>Download</value>
+  </data>
+  <data name="DownloadAppTitle" xml:space="preserve">
+    <value>Download the app from Google Play and start earning today!</value>
+  </data>
+  <data name="EarnBonusPoints" xml:space="preserve">
+    <value>Earn bonus points for good driving and recommending us to your friends</value>
+  </data>
+  <data name="FindCar" xml:space="preserve">
+    <value>Find the location of your car on the map</value>
+  </data>
+  <data name="HelpOnRoad" xml:space="preserve">
+    <value>Help on the road</value>
+  </data>
+  <data name="InsuranceAccepted" xml:space="preserve">
+    <value>Application for insurance is accepted. Wait for the call of a specialist.</value>
+  </data>
+  <data name="LessCost" xml:space="preserve">
+    <value>Pay every quarter less and less if you are a good driver</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="QuarterlyPolicy" xml:space="preserve">
+    <value>Quarterly policy</value>
+  </data>
+  <data name="SeeMainTerms" xml:space="preserve">
+    <value>At any time, see the main terms of your CASCO policy</value>
+  </data>
+  <data name="SeeYourRating" xml:space="preserve">
+    <value>See your rating and improve the quality of your driving</value>
+  </data>
+  <data name="SendRequest" xml:space="preserve">
+    <value>Send request</value>
+  </data>
+  <data name="Settlement" xml:space="preserve">
+    <value>Simplified settlement (without a visit to the office)</value>
+  </data>
+  <data name="Surname" xml:space="preserve">
+    <value>Surname</value>
+  </data>
+  <data name="AutoParkingModeMessage" xml:space="preserve">
+    <value>Automatic parking is activated. It will allow you not to worry about that you forgot to park. When in the parking zone, the system will automatically park your car.</value>
+  </data>
+</root>
